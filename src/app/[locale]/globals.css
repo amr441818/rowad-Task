@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: rgb(var(--foreground-rgb));
+  /* margin-top: 67px; */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.m_b5489c3c {
+  width: 100%;
+  text-align: center;
+}
+.m_c0783ff9 > div {
+  display: block !important;
+}
+.m_fd1ab0aa > div > div {
+  width: 100%;
+}
+.m_615af6c9 {
+  margin: auto;
+  font-weight: 600;
+}
+.m_606cb269 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.about-card {
+  transition: 0.5s all ease;
+}
+.about-card {
+  box-shadow: 0px 0px 13px 0px #cde7df;
+}
+.about-card:hover {
+  background-color: #019867;
+}
+.about-card p,
+.about-card h3 {
+  transition: 0.5s all ease;
+}
+.about-card:hover p,
+.about-card:hover h3 {
+  color: white;
+}
+
+/* .m_82577fc2[data-position="right"] {
+  border-right: 1px solid #d9d9d9;
+  left: 0;
+  --section-size: 100px;
+} */
+.list-square li::marker {
+  color: #019867;
+}
+.list-square {
+  list-style-type: square;
+}
+/* this overide mentain css label form */
+.m_8fdc1311 {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+/* this overide mentain css placeholder form */
+::placeholder {
+  font-size: 14px;
+}
+
+@media (max-width: 771px) {
+  input {
+    font-size: 14px !important;
+  }
+}
