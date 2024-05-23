@@ -44,9 +44,6 @@ const HomeProducts = () => {
     console.log(data);
   };
   {
-    if (isLoading || deletationIsLoading) {
-      return <Loader />;
-    }
   }
   return (
     <>
@@ -57,7 +54,7 @@ const HomeProducts = () => {
         setProducts={setProducts}
         products={products}
       />
-
+      {(isLoading || deletationIsLoading) && <Loader />}
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 mx-[67px] ">
         {products?.map((product: any) => (
           <>
